@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SkillReceipt - Login / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SkillReceipt</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="login.html">Login / Signup</a></li>
+            </ul>
+            <button class="nav-toggle">Menu</button>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="auth-section">
+            <h2>Login or Sign Up</h2>
+
+            <!-- Tab buttons -->
+            <div class="tab-container">
+                <button id="login-tab" class="tab active">Login</button>
+                <button id="signup-tab" class="tab">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="form-container">
+                <form>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signup-form" class="form-container hidden">
+                <form>
+                    <label for="signup-name">Full Name:</label>
+                    <input type="text" id="signup-name" name="signup-name" required>
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                    <label for="signup-role">I'm a:</label>
+                    <select id="signup-role" name="signup-role">
+                        <option value="student">Student</option>
+                        <option value="recruiter">Recruiter</option>
+                        <option value="institution">Institution</option>
+                    </select>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SkillReceipt. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for tab switching -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SkillReceipt - Skill Verification Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SkillReceipt</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Skill Upload</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <button class="nav-toggle">Menu</button>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="upload-section">
+            <h2>Skill Verification Upload</h2>
+            <p>Submit your skill credential details for verification below:</p>
+            <form>
+                <label for="skill-name">Skill Name:</label>
+                <input type="text" id="skill-name" name="skill-name" required>
+                
+                <label for="skill-description">Description:</label>
+                <textarea id="skill-description" name="skill-description" rows="4" required></textarea>
+                
+                <label for="skill-document">Upload Credential (PDF or Image):</label>
+                <input type="file" id="skill-document" name="skill-document" accept=".pdf, image/*" required>
+                
+                <button type="submit" class="btn">Submit for Verification</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SkillReceipt. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
