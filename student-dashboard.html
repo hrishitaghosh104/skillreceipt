@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Dashboard</title>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="loadStudentStatus()">
 
-<h2>Student Dashboard</h2>
-<p>Welcome Student</p>
+<nav>
+  <img src="logo.png">
+  <a href="index.html">Home</a>
+  <a href="login.html">Logout</a>
+</nav>
 
-<a href="upload.html">Upload Skill</a>
+<div class="container">
+  <h2>Student Dashboard</h2>
 
+  <p id="status"></p>
+
+  <button onclick="uploadSkill()">Upload Skill Proof</button>
+  <br><br>
+  <a href="certificate.html">View Certificate</a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
