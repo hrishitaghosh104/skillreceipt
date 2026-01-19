@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login | SkillReceipt</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>SkillReceipt | Login</title>
 </head>
 <body>
 
 <h2>Login</h2>
 
+<label>Select Role:</label>
 <select id="role">
-  <option value="student">Student</option>
-  <option value="faculty">Faculty</option>
+    <option value="student">Student</option>
+    <option value="faculty">Faculty</option>
 </select>
 
-<input type="email" id="email" placeholder="Email">
-<input type="password" id="password" placeholder="Password">
+<br><br>
 
-<button type="button" onclick="login()">Login</button>
+<label>Email:</label>
+<input type="email" id="email">
+
+<br><br>
+
+<label>Password:</label>
+<input type="password" id="password">
+
+<br><br>
+
+<!-- IMPORTANT: type="button" -->
+<button type="button" onclick="loginUser()">Login</button>
 
 <script src="script.js"></script>
+
 </body>
 </html>
