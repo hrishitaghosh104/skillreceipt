@@ -1,8 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recruiter Dashboard | SkillReceipt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body onload="loadRecruiterDashboard()">
-<nav><img src="logo.png"></nav>
+
+<nav>
+  <img src="logo.png">
+  <a href="index.html">Home</a>
+  <a href="login.html">Logout</a>
+</nav>
+
 <div class="container">
   <h2>Recruiter Dashboard</h2>
-  <div id="recruiterResults"></div>
+  <p>Search and review candidates with verified skills.</p>
+
+  <div class="card">
+    <h3>Verified Talent Pool</h3>
+    <div id="recruiterResults"></div>
+  </div>
 </div>
+
 <script src="script.js"></script>
 </body>
+</html>
