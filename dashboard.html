@@ -8,17 +8,21 @@
 
 <body onload="loadStudentDashboard()">
 
+<!-- NAVBAR -->
 <nav>
-  <img src="logo.png">
+  <img src="logo.png" alt="SkillReceipt Logo" height="40">
   <a href="index.html">Home</a>
   <a href="certificate.html">My Certificate</a>
   <a href="login.html">Logout</a>
 </nav>
 
+<!-- MAIN CONTAINER -->
 <div class="container">
+
   <h2>Student Dashboard</h2>
   <p>Log your real activities and track verification status.</p>
 
+  <!-- LOG ACTIVITY -->
   <div class="card">
     <h3>Log Activity</h3>
     <input id="skill" placeholder="Skill (e.g., Data Analysis)">
@@ -26,10 +30,12 @@
     <button onclick="logActivity()">Submit for Verification</button>
   </div>
 
+  <!-- ACTIVITY LIST -->
   <div class="card">
-    <h3>My Skills Progress</h3>
-    <div id="studentActivities"></div>
+    <h3>My Activities</h3>
+    <div id="studentActivities">Loading...</div>
   </div>
+
 </div>
 
 <script src="script.js"></script>
