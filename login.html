@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>SkillReceipt | Login</title>
+  <title>Login | SkillReceipt</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Login</h2>
+<nav>
+  <img src="logo.png">
+  <a href="index.html">Home</a>
+</nav>
 
-<label>Select Role:</label>
-<select id="role">
+<div class="container">
+  <h2>Login</h2>
+
+  <label>Role</label>
+  <select id="role">
     <option value="student">Student</option>
     <option value="faculty">Faculty</option>
-</select>
+  </select>
 
-<br><br>
-
-<label>Email:</label>
-<input type="email" id="email">
-
-<br><br>
-
-<label>Password:</label>
-<input type="password" id="password">
-
-<br><br>
-
-<!-- IMPORTANT: type="button" -->
-<button type="button" onclick="loginUser()">Login</button>
+  <br><br>
+  <button type="button" onclick="loginUser()">Login</button>
+</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
