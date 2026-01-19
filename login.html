@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login | SkillReceipt</title>
+  <title>Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <img src="logo.png">
-  <a href="index.html">Home</a>
 </nav>
 
 <div class="container">
-  <h2>Login</h2>
-
-  <label>Role</label>
   <select id="role">
     <option value="student">Student</option>
-    <option value="faculty">Faculty</option>
+    <option value="institution">Institution</option>
+    <option value="recruiter">Recruiter</option>
   </select>
-
-  <br><br>
-  <button type="button" onclick="loginUser()">Login</button>
+  <button onclick="loginUser()">Login</button>
 </div>
 
 <script src="script.js"></script>
