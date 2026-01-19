@@ -1,10 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Institution Dashboard | SkillReceipt</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
 <body onload="loadInstitutionDashboard(); loadAnalytics()">
-<nav><img src="logo.png"></nav>
+
+<nav>
+  <img src="logo.png">
+  <a href="index.html">Home</a>
+  <a href="login.html">Logout</a>
+</nav>
+
 <div class="container">
-  <h2>Institution Dashboard</h2>
-  <canvas id="skillChart"></canvas>
-  <div id="institutionList"></div>
+  <h2>Institution Validation Panel</h2>
+  <p>Review student submissions, verify skills, and monitor batch analytics.</p>
+
+  <div class="card">
+    <h3>Batch Skill Analytics</h3>
+    <canvas id="skillChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h3>Pending & Verified Submissions</h3>
+    <div id="institutionList"></div>
+  </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script src="script.js"></script>
 </body>
+</html>
