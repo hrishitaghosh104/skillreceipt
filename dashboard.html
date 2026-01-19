@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SkillReceipt | Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Student Dashboard | SkillReceipt</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<header>
-    <h1>SkillReceipt Dashboard</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="upload.html">Upload Skill</a>
-        <a href="login.html">Logout</a>
-    </nav>
-</header>
+<body onload="loadStudentDashboard()">
 
-<section class="dashboard">
-    <h2>Welcome to SkillReceipt</h2>
-    <p>Your skill verification journey starts here.</p>
+<nav>
+  <img src="logo.png">
+  <a href="index.html">Home</a>
+  <a href="certificate.html">My Certificate</a>
+  <a href="login.html">Logout</a>
+</nav>
 
-    <div class="cards">
-        <div class="card">Upload Skill Proof</div>
-        <div class="card">View Verified Skills</div>
-        <div class="card">Recruiter Insights</div>
-    </div>
-</section>
+<div class="container">
+  <h2>Student Dashboard</h2>
+  <p>Log your real activities and track verification status.</p>
 
+  <div class="card">
+    <h3>Log Activity</h3>
+    <input id="skill" placeholder="Skill (e.g., Data Analysis)">
+    <input id="evidence" placeholder="Evidence (certificate link / description)">
+    <button onclick="logActivity()">Submit for Verification</button>
+  </div>
+
+  <div class="card">
+    <h3>My Skills Progress</h3>
+    <div id="studentActivities"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
