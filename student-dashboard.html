@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Student Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body onload="loadStudentStatus()">
-
-<nav>
-  <img src="logo.png">
-  <a href="index.html">Home</a>
-  <a href="login.html">Logout</a>
-</nav>
-
+<body onload="loadStudentDashboard()">
+<nav><img src="logo.png"></nav>
 <div class="container">
   <h2>Student Dashboard</h2>
-
-  <p id="status"></p>
-
-  <button onclick="uploadSkill()">Upload Skill Proof</button>
-  <br><br>
+  <input id="skill" placeholder="Skill">
+  <input id="evidence" placeholder="Evidence">
+  <button onclick="logActivity()">Log Activity</button>
+  <div id="studentActivities"></div>
   <a href="certificate.html">View Certificate</a>
 </div>
-
 <script src="script.js"></script>
 </body>
-</html>
