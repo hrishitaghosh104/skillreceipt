@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>SkillReceipt Certificate</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body onload="loadCertificate()">
-
-<nav>
-  <img src="logo.png">
-  <a href="index.html">Home</a>
-  <a href="student-dashboard.html">Dashboard</a>
-</nav>
-
+<nav><img src="logo.png"></nav>
 <div class="container">
+  <h2>Verified SkillReceipt</h2>
+  <button onclick="downloadPDF()">Download PDF</button>
   <div id="cert"></div>
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="script.js"></script>
 </body>
-</html>
