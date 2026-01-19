@@ -1,11 +1,11 @@
 function showSignIn() {
-    document.getElementById("signin-box").classList.remove("hidden");
-    document.getElementById("signup-box").classList.add("hidden");
+    document.getElementById("signin-box").style.display = "block";
+    document.getElementById("signup-box").style.display = "none";
 }
 
 function showSignUp() {
-    document.getElementById("signup-box").classList.remove("hidden");
-    document.getElementById("signin-box").classList.add("hidden");
+    document.getElementById("signup-box").style.display = "block";
+    document.getElementById("signin-box").style.display = "none";
 }
 
 function signIn() {
@@ -14,6 +14,6 @@ function signIn() {
 }
 
 function signUp() {
-    alert("Account created successfully (Demo)");
+    alert("Sign Up successful (Demo)");
     window.location.href = "dashboard.html";
 }
