@@ -2,73 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>SkillReceipt - Login / Sign Up</title>
+    <title>SkillReceipt | Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">SkillReceipt</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="login.html">Login / Signup</a></li>
-            </ul>
-            <button class="nav-toggle">Menu</button>
-        </nav>
-    </header>
 
-    <!-- Main content -->
-    <main>
-        <section class="auth-section">
-            <h2>Login or Sign Up</h2>
+<header>
+    <h1>SkillReceipt</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+    </nav>
+</header>
 
-            <!-- Tab buttons -->
-            <div class="tab-container">
-                <button id="login-tab" class="tab active">Login</button>
-                <button id="signup-tab" class="tab">Sign Up</button>
-            </div>
+<div class="auth-container">
 
-            <!-- Login Form -->
-            <div id="login-form" class="form-container">
-                <form>
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="login-email" required>
-                    <label for="login-password">Password:</label>
-                    <input type="password" id="login-password" name="login-password" required>
-                    <button type="submit" class="btn">Login</button>
-                </form>
-            </div>
+    <div class="auth-buttons">
+        <button onclick="showSignIn()">Sign In</button>
+        <button onclick="showSignUp()">Sign Up</button>
+    </div>
 
-            <!-- Signup Form -->
-            <div id="signup-form" class="form-container hidden">
-                <form>
-                    <label for="signup-name">Full Name:</label>
-                    <input type="text" id="signup-name" name="signup-name" required>
-                    <label for="signup-email">Email:</label>
-                    <input type="email" id="signup-email" name="signup-email" required>
-                    <label for="signup-password">Password:</label>
-                    <input type="password" id="signup-password" name="signup-password" required>
-                    <label for="signup-role">I'm a:</label>
-                    <select id="signup-role" name="signup-role">
-                        <option value="student">Student</option>
-                        <option value="recruiter">Recruiter</option>
-                        <option value="institution">Institution</option>
-                    </select>
-                    <button type="submit" class="btn">Sign Up</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <!-- SIGN IN -->
+    <div id="signin-box" class="auth-box">
+        <h2>Sign In</h2>
+        <input type="email" placeholder="Email" id="loginEmail" required>
+        <input type="password" placeholder="Password" id="loginPassword" required>
+        <button onclick="signIn()">Sign In</button>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 SkillReceipt. All rights reserved.</p>
-    </footer>
+    <!-- SIGN UP -->
+    <div id="signup-box" class="auth-box hidden">
+        <h2>Create Account</h2>
+        <input type="text" placeholder="Full Name" id="name" required>
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="password" placeholder="Password" id="password" required>
+        <select id="role">
+            <option>Student</option>
+            <option>Recruiter</option>
+            <option>Institution</option>
+        </select>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
 
-    <!-- JavaScript for tab switching -->
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
